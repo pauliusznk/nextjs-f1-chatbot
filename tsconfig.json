@@ -18,5 +18,11 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    },
+    "require": ["dotenv/config"]
+  },
   "exclude": ["node_modules"]
 }
